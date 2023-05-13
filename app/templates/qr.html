@@ -1,0 +1,22 @@
+{% extends "index.html" %} {% block content %}
+
+<div class="container mt-4">
+  <div
+    class="card"
+    style="width: 18rem; margin-left: auto; margin-right: auto"
+  >
+    <img src="static/img/qr.png" class="card-img-top" alt="Generated QR Code" />
+    <div class="card-body">
+      <h5 class="card-title text-center">QR Code</h5>
+      <!-- <p class="card-text text-center">QR Code generator</p> -->
+      <a
+        href="http://localhost:5000/static/img/qr.png"
+        class="btn btn-primary"
+        download=""
+        style="display:block; margin-left: auto; margin-right: auto"
+        >Download</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock %}
