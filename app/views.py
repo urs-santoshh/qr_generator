@@ -32,7 +32,7 @@ def read_form():
                     "detail":"QR code generated successfully"
                 }
         return render_template("qr.html", message=message)
-    except Exception as e:
+    except Exception:
         message = {
                     "type":"Error",
                     "tags":"warning",

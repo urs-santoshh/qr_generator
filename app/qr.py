@@ -7,7 +7,6 @@ def generate_qr(dataObj):
         img = qrcode.make(dataJson)
         # type(img)  # qrcode.image.pil.PilImage
         img.save("app/static/img/qr.png")
-        return {"success":"QR code has been generated"}
-    except Exception as e:
-        return {"error":"QR code could not be generated "}
+    except Exception:
+        raise Exception
     
