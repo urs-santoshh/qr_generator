@@ -8,5 +8,5 @@ def generate_qr(dataObj):
         # type(img)  # qrcode.image.pil.PilImage
         img.save("app/static/img/qr.png")
     except Exception:
-        raise Exception
+        raise
     
